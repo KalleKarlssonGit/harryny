@@ -70,8 +70,7 @@ public class HarryKartServiceImpl implements HarryKartService {
 		// Get result for all participants. All participants will be placed in this
 		// list, and is null if it doesnt finish.
 
-		List<Ranking> allRanking = getAllRanking(hkt.getValue().getNumberOfLoops(),
-				hkt.getValue().getStartList().getParticipant(), hkt.getValue().getPowerUps().getLoop());
+		List<Ranking> allRanking = getAllRanking(hkt.getValue().getNumberOfLoops(), hkt.getValue().getStartList().getParticipant(), hkt.getValue().getPowerUps().getLoop());
 
 		List<Ranking> topXRankingList = getFirstFinsihers(allRanking);
 
@@ -116,8 +115,7 @@ public class HarryKartServiceImpl implements HarryKartService {
 	}
 
 	@Override
-	public Double getHorseTotalTime(BigInteger numberOfLoops, ParticipantType participantType,
-			List<LoopType> loopTypeList) {
+	public Double getHorseTotalTime(BigInteger numberOfLoops, ParticipantType participantType, List<LoopType> loopTypeList) {
 		int speed = participantType.getBaseSpeed().intValue();
 
 		if (speed <= 0) {

@@ -98,4 +98,8 @@ public class LoopType {
 		this.number = value;
 	}
 
+	public void setLane(List<LaneType> laneTypeList) {
+		this.lane = laneTypeList;
+	}
+
 }

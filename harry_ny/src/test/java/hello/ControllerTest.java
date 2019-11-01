@@ -40,7 +40,6 @@ public class ControllerTest {
 
 	@Test
 	public void paramGreetingShouldReturnTailoredMessagee() throws Exception {
-
 		StringBuilder sb = new StringBuilder();
 		sb.append("<harryKart>");
 		sb.append("<numberOfLoops>3</numberOfLoops>");
@@ -96,10 +95,6 @@ public class ControllerTest {
 				.contentType(MediaType.APPLICATION_XML)
 				.content(xmlString.getBytes()))
 				.andExpect(status().isOk());
-	}
-
-	@Test
-	public void testFail() throws Exception {
 	}
 
 }
